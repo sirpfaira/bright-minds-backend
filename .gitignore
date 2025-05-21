@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Simba Custom
+*.db
+*.db-shm
+*.db-wal
+BrightMindsBackend/Migrations/
