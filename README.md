@@ -6,7 +6,18 @@
 
 - C#
 - .Net Core
-- SQLite with Microsoft Entity Core
+- SQLite with Microsoft Entity Framework Core
+
+## Microsoft Entity Framework Core
+> Open "Package manager console" and run `dotnet tool install --global dotnet-ef` to install the Microsoft Entity Framework Core Tool globally on your machine.
+
+## Migrations
+> On initial cloning of the application you should run a migration to update your database. 
+> To run the migration open the "Package manager console" and make sure you are in the root directory of your project not solution folder.
+* Run the command `dotnet ef migrations add Initial`   // Initial is the title of the migration, you can name it appropriately.
+* Run `dotnet-ef database update` to write changes to the database
+* After creating the migration and updating the database a folder called "Migrations" will be added in the project and a database as well.
+* Whenever you there are changes to the data models in the `DataContext` class run migrations to update your database.
 
 ## Contributors
 
